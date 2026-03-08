@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cop Friendly e-Seva - Register</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 45px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      text-align: center;
+      width: 350px;
+      backdrop-filter: blur(5px);
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    input, select {
+      width: 95%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: linear-gradient(to right, #007BFF, #00c6ff);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      background: linear-gradient(to right, #0056b3, #0099cc);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h2> User Registration</h2>
+
+    <form action="register.php" method="post">
+      Name:<br>
+      <input type="text" name="name" required>
+
+      Email:<br>
+      <input type="email" name="email" required>
+
+      Password:<br>
+      <input type="password" name="password" required>
+
+      Role:<br>
+      <select name="role">
+        <option value="citizen">Citizen</option>
+        <option value="police">Police</option>
+      </select>
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
