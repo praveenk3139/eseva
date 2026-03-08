@@ -1,16 +1,9 @@
 <?php
-
-$host = "yamanote.proxy.rlwy.net";
-$user = "root";
-$password = "OBWFSdSFNpVLOPuwsmeOygdbEGuOMRNY";
-$database = "railway";
-$port = 17401;
-
-$conn = mysqli_connect($host, $user, $password, $database, $port);
+$conn = mysqli_connect("localhost", "root", "", "eseva");
 
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    die("Database connection failed");
 }
-
 ?>
+
 
